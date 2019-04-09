@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">list_character_anime</string>
+    <!--SKET DANCE String-->
+    <!--Yusuke Fujikasi-->
+    <string name="abstrack_sket_dance_yuusuke_fujisaki">Yūsuke Fujisaki (藤崎 佑助), or Bossun (ボッスン), as he is more commonly called, is the leader of the Sket Dan.</string>
+    <string name="personality_sket_dance_yuusuke_fujisaki">Bossun is known for his enthusiasm for helping others solve their problems and is quite idealistic. Given a proper backstory and relationship to his client, his willing to go to such lengths to find even lost candy wrappers if the situation calls it. Despite his idealism, he acts childlike and is socially awkward, especially with female interactions and being filmed. One particular trait is his inability to pick up even the most obvious social cues, and he becomes easily depressed and self-conscious when insulted or being left out.\n\nRegardless of his shortcomings, Bossun is deeply analytical when facing problems and has no trouble thinking about plans. Many students consider him a genius in the arts and in logic puzzles, however, Bossun himself does not consider his talents to be any remarkable. Despite this, his talents proved to be useful when solving any problems given to him.</string>
+    <string name="nickname_sket_dance_yuusuke_fujisaki">Bossun (ボッスン) \nBosshūton (ボッシュートン) \nBossman (ボッシュマン)</string>
+    <string name="age_sket_dance_yuusuke_fujisaki">16</string>
+    <string name="birthday_sket_dance_yuusuke_fujisaki">November 11</string>
+    <string name="gender_sket_dance_yuusuke_fujisaki">Male</string>
+    <string name="bloodtype_sket_dance_yuusuke_fujisaki">AB</string>
+    <string name="height_sket_dance_yuusuke_fujisaki">171 cm</string>
+    <string name="weight_sket_dance_yuusuke_fujisaki">57 kg</string>
+    <string name="eyes_sket_dance_yuusuke_fujisaki">Light Brown</string>
+    <string name="hair_sket_dance_yuusuke_fujisaki">Black</string>
+    <!--Hime Onizuka-->
+    <string name="abstrack_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="personality_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="nickname_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="age_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="birthday_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="gender_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="bloodtype_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="height_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="weight_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="eyes_sket_dance_hime_onizuka">Onizuka</string>
+    <string name="hair_sket_dance_hime_onizuka">Onizuka</string>
+    <!--Kazuyoshi Usui-->
 </resources>
