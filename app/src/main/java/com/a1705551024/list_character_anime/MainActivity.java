@@ -3,29 +3,38 @@ package com.a1705551024.list_character_anime;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import java.util.ArrayList;
 
-    Button btnfujisaki;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private RecyclerView rvCategory;
+    private ArrayList<Anime> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnfujisaki = findViewById(R.id.btn_fuujisaki);
-        btnfujisaki.setOnClickListener(this);
+        rvCategory = findViewById(R.id.rv_category);
+        rvCategory.setHasFixedSize(true);
+
+        list.addAll(AnimeData.getListData());
+        showRecyclerGrid();
+    }
+
+    private void showRecyclerGrid(){
+        rvCategory.setLayoutManager(new GridLayoutManager(this, 2));
+        GridAnimeAdapter gridAnimeAdapter = new GridAnimeAdapter(this);
+        gridAnimeAdapter.setListAnime(list);
+        rvCategory.setAdapter(gridAnimeAdapter);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btn_fuujisaki:
-            Intent goes_to_yuusuke_fujisaki_activity = new Intent(MainActivity.this, Yusuke_Fujisaki_Det.class);
-            startActivity(goes_to_yuusuke_fujisaki_activity);
-            break;
-        }
+
     }
 }
