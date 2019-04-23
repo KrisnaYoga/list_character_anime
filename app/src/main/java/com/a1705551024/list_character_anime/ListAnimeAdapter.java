@@ -55,6 +55,7 @@ public class ListAnimeAdapter extends RecyclerView.Adapter<ListAnimeAdapter.Cate
                 .load(getListAnime().get(position).getHeadhero())
                 .apply(new RequestOptions().override(200, 200))
                 .into(categoryViewHolder.imgPhoto);
+
     }
 
     @Override

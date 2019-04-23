@@ -2,8 +2,8 @@ package com.a1705551024.list_character_anime;
 
 public class Anime {
     private String name, photo, description, quirks;
-
     private String power, speed, technique, intelligence, cooperativeness;
+    private String directlink, herocostum, headhero, heroname;
 
     public String getDirectlink() {
         return directlink;
@@ -13,8 +13,6 @@ public class Anime {
         this.directlink = directlink;
     }
 
-    private String directlink;
-
     public String getHerocostum() {
         return herocostum;
     }
@@ -22,8 +20,6 @@ public class Anime {
     public void setHerocostum(String herocostum) {
         this.herocostum = herocostum;
     }
-
-    private String herocostum;
 
     public String getHeadhero() {
         return headhero;
@@ -33,8 +29,6 @@ public class Anime {
         this.headhero = headhero;
     }
 
-    private String headhero;
-
     public String getHeroname() {
         return heroname;
     }
@@ -42,8 +36,6 @@ public class Anime {
     public void setHeroname(String heroname) {
         this.heroname = heroname;
     }
-
-    private String heroname;
 
     public String getName() {
         return name;

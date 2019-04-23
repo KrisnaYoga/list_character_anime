@@ -77,31 +77,6 @@ public class MainActivity extends AppCompatActivity {
         ListAnimeAdapter listAnimeAdapter = new ListAnimeAdapter(this);
         listAnimeAdapter.setListAnime(list);
         rvCategory.setAdapter(listAnimeAdapter);
-
-        ItemClickSupport.addTo(rvCategory).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
-            @Override
-            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-                Log.d(TAG,"onClick: Clickedon.");
-
-                showSelectedAnime(list.get(position));
-                Intent intent = new Intent(MainActivity.this, AnimeListChar.class);
-
-                intent.putExtra("namechar",AnimeData.getListData().get(position).getName());
-                intent.putExtra("chardesc",AnimeData.getListData().get(position).getDescription());
-                intent.putExtra("imgchar",AnimeData.getListData().get(position).getHerocostum());
-                intent.putExtra("quirkchar",AnimeData.getListData().get(position).getQuirks());
-
-                //Content Table
-                intent.putExtra("powerchar",AnimeData.getListData().get(position).getPower());
-                intent.putExtra("speedchar",AnimeData.getListData().get(position).getSpeed());
-                intent.putExtra("techniquechar",AnimeData.getListData().get(position).getTechnique());
-                intent.putExtra("intelligencechar",AnimeData.getListData().get(position).getIntelligence());
-                intent.putExtra("cooperativenesschar",AnimeData.getListData().get(position).getCooperativeness());
-
-                startActivity(intent);
-            }
-        });
-
     }
 
     @Override
